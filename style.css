@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: white;
+}
+.container {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* .h1makanan {
+    background-color: #00cba9;
+} */
+
+.containerminuman {
+    display: flex;
+    align-items: center;
+    
+}
+
+.text-content {
+    float: left; /* Mengatur elemen teks ke kiri */
+    width: 50%; /* Mengatur lebar elemen teks */
+    padding: 20px; /* Memberikan padding jika diperlukan */
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+.img {
+    
+}
+
+h2, p {
+    margin-top: -10px;
+}
+
+.cover-image {
+    background-image: url('assets/Warung-removebg-preview.png');
+    background-size: cover; /* Mengatur gambar agar mencakup seluruh area kontainer */
+    background-repeat: no-repeat;
+    background-position: center center; /* Posisi gambar di tengah-tengah kontainer */
+    width: 100%; /* Lebar kontainer 100% */
+    height: 400px; /* Tinggi kontainer, sesuaikan sesuai kebutuhan Anda */
+}
+
+.makanan {
+    background-color: 0099ff;
+}
+
+.image1 {
+    height: 200px;
+}
+
+.h1 {
+    color: aqua;
+    font-weight: 900;
+    text-shadow: 5px 5px 15px  black;
+    font-size: 30px;
+}
+
+.pesan:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.menuMakanan {
+    font-size: 50px;
+}
+
+.pembungkus {
+    font-weight: 800;
+}
+
+.footer {
+    padding-left: 40%;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.contact1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: black;
+}
+
+.md\\:hidden {
+    display: none !important; /* Hide the menu for larger screens */
+ }
+
+/* .Menumakan {
+    background-color: #0099ff;
+}  */
+
+/* .containermain {
+   background-image: url(assets/th.jpg);
+} */
+
+ 
+
+/* #makanan {
+    background-color: white;
+} */

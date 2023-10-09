@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="shortcut icon" href="assets/LOGO.jpg" type="image/x-icon" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <title>Website Makan</title>
+      <style>
+         /* Tambahkan gaya khusus untuk tampilan mobile */
+         @media (max-width: 640px) {
+            .image1 {
+               max-width: 100%; /* Gambar akan mengisi seluruh lebar konten */
+               height: auto; /* Menjaga rasio aspek gambar */
+            }
+      
+            /* Gaya lain yang mungkin diperlukan untuk tampilan mobile */
+         }
+      </style>
+      
+   </head>
+   <body>
+<!-- Navbar -->
+<nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 mb-16">
+   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center">
+         <img src="assets/LOGO.jpg" class="h-8 mr-3 rounded" alt="Flowbite Logo" />
+         <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Christian</span>
+      </a>
+      <div id="navbar-menu" class="hidden md:flex md:w-auto md:order-1">
+         <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+               <a href="Home" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+            </li>
+            <li>
+               <a href="#makanan" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Makanan</a>
+            </li>
+            <li>
+               <a href="#minuman" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Minuman</a>
+            </li>
+            <li>
+               <a href="#snack" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Snack</a>
+            </li>
+            <li>
+               <a href="#contact" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover-bg-gray-100 md:hover-bg-transparent md:hover-text-blue-700 md:p-0 md:dark:hover-text-blue-500 dark:text-white dark:hover-bg-gray-700 dark:hover-text-white md:dark:hover-bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+         </ul>
+      </div>
+      <button id="navbar-toggle-button" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+         Login
+      </button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="md:hidden text-gray-500 hover:text-gray-700 focus:outline-none dark:text-gray-400 dark:hover:text-gray-300" aria-controls="navbar-menu" aria-expanded="false">
+         <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+         </svg>
+      </button>
+   </div>
+</nav>
+
+
+
+<!-- Akhir Navbar -->
+<!-- Home -->
+      <main
+         class="mx-auto mt-16 flex flex-col md:flex-row items-center"
+         id="Home"
+         data-aos="zoom-in-up"
+         data-aos-duration="1000"
+      >
+         <div class="w-full md:w-1/2">
+            <div class="font-sans text-black">
+               <h2 class="text-2xl text-black">
+                  Selamat Datang Di Website Warung Makan<br />
+                  Kita Kita.
+               </h2>
+               <p class="text-xl text-black">
+                  Silahkan Pilih Makanan Dan Minuman Kesukaan Anda
+               </p>
+            </div>
+         </div>
+         <div class="w-full md:w-1/2 mt-4 md:mt-0">
+            <div class="cover-image"></div>
+         </div>
+      </main>
+      <br />
+      <br />
+      <!-- akhir Home -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+         <path
+            fill="#4ade80"
+            fill-opacity="1"
+            d="M0,32L48,42.7C96,53,192,75,288,69.3C384,64,480,32,576,53.3C672,75,768,149,864,160C960,171,1056,117,1152,96C1248,75,1344,85,1392,90.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+         ></path>
+      </svg>
+     <!-- Makanan -->
+<h1
+class="text-center h1 bg-green-400"
+data-aos="fade-down"
+data-aos-duration="1000"
+id="makanan"
+>
+Menu Makanan
+
+
+<div
+class="container mx-auto px-1 py-2 lg:px-32 lg:pt-12 "
+data-aos="flip-right"
+data-aos-offset="300"
+data-aos-duration="1000"
+>
+<div class="-m-1 flex flex-wrap md:-m-2">
+   <!-- Konten Makanan 1 -->
+   <div class="flex w-full md:w-1/2 lg:w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+         <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+            1. Mie Goreng
+         </h1>
+         <img
+            alt="gallery"
+            class="image1 block w-full rounded-lg object-cover object-center"
+            src="img_Makanan/Mie Goreng.png"
+         />
+         <h1 class="text-center pesan">
+            <a href="proses.html">Pesan Menu Ini</a>
+         </h1>
+         <br />
+         <p class="text-center pb-5 pembungkus text-red-600 text-2xl">
+            Harga : 11.000
+         </p>
+      </div>
+   </div>
+
+   <!-- Konten Makanan 2 -->
+   <div class="flex w-full md:w-1/2 lg:w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+         <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+            2. Nasi Goreng
+         </h1>
+         <img
+            alt="gallery"
+            class="image1 block w-full rounded-lg object-cover object-center"
+            src="img_Makanan/Nasi Goreng.png"
+         />
+         <h1 class="text-center pesan">
+            <a href="proses.html">Pesan Menu Ini</a>
+         </h1>
+         <br />
+         <p class="text-center pb-5 pembungkus text-red-600 text-2xl">
+            Harga : 11.000
+         </p>
+      </div>
+   </div>
+
+   <!-- Konten Makanan 3 -->
+   <div class="flex w-full md:w-1/2 lg:w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+         <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+            3. Indomie Goreng
+         </h1>
+         <img
+            alt="gallery"
+            class="image1 block w-full rounded-lg object-cover object-center"
+            src="img_Makanan/Indomie Goreng.png"
+         />
+         <h1 class="text-center pesan">
+            <a href="proses.html">Pesan Menu Ini</a>
+         </h1>
+         <br />
+         <p class="text-center pb-5 pembungkus text-red-600 text-2xl">
+            Harga : 9.000
+         </p>
+      </div>
+   </div>
+
+   <!-- Konten Makanan 4 -->
+   <div class="flex w-full md:w-1/2 lg:w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+         <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+            4. Ayam Bakar
+         </h1>
+         <img
+            alt="gallery"
+            class="image1 block w-full rounded-lg object-cover object-center"
+            src="img_Makanan/Ayam Bakar.png"
+         />
+         <h1 class="text-center pesan">
+            <a href="proses.html">Pesan Menu Ini</a>
+         </h1>
+         <br />
+         <p class="text-center pb-5 pembungkus text-red-600 text-2xl">
+            Harga : 12.000
+         </p>
+      </div>
+   </div>
+
+   <!-- Konten Makanan 5 -->
+   <div class="flex w-full md:w-1/2 lg:w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+         <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+            5. Mie Ayam
+         </h1>
+         <img
+            alt="gallery"
+            class="image1 block w-full rounded-lg object-cover object-center"
+            src="img_Makanan/Mie AYAM.png"
+         />
+         <h1 class="text-center pesan">
+            <a href="proses.html">Pesan Menu Ini</a>
+         </h1>
+         <br />
+         <p class="text-center pb-5 pembungkus text-red-600 text-2xl">
+            Harga : 10.000
+         </p>
+      </div>
+   </div>
+
+   <!-- Konten Makanan 6 -->
+   <div class="flex w-full md:w-1/2 lg:w-1/3 flex-wrap">
+      <div class="w-full p-1 md:p-2">
+         <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+            6. Mie Bakso
+         </h1>
+         <img
+            alt="gallery"
+            class="image1 block w-full rounded-lg object-cover object-center"
+            src="img_Makanan/Mie Bakso.png"
+         />
+         <h1 class="text-center pesan">
+            <a href="proses.html">Pesan Menu Ini</a>
+         </h1>
+         <br />
+         <p class="text-center pb-5 pembungkus text-red-600 text-2xl">
+            Harga : 10.000
+         </p>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0284c7" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,165.3C384,181,480,171,576,176C672,181,768,203,864,213.3C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg></h1>
+<!-- Akhir Makanan -->
+<!-- Minuman -->
+<h1
+   class="text-center h1 bg-sky-600"
+   data-aos="fade-down"
+   data-aos-duration="1000"
+   id="minuman"
+>
+   Menu Minuman
+
+
+<div class="container-fluid">
+   <div
+      class="containerminuman w-full p-1 md:p-2 mx-auto my-auto px-1 py-2 lg:px-32 lg:pt-12"
+      data-aos="flip-right"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+   >
+      <div class="-m-1 flex flex-wrap md:-m-2">
+         <!-- Konten Minuman 1 -->
+         <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center h1 mb-2 text-black text-2xl pembungkus">
+                  1. Jus Jeruk
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Minuman/Orange.png"
+               />
+               <h1 class="text-center h1 text-green-500 pesan">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 pembungkus text-red-700 text-2xl">
+                  Harga : 7.000
+               </p>
+            </div>
+         </div>
+
+         <!-- Konten Minuman 2 -->
+         <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center h1 mb-2 text-black text-2xl pembungkus">
+                  2. Teh Manis
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Minuman/TEH MANIS.png"
+               />
+               <h1 class="text-center h1 text-green-500 pesan">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 pembungkus text-red-700 text-2xl">
+                  Harga : 5.000
+               </p>
+            </div>
+         </div>
+
+         <!-- Konten Minuman 3 -->
+         <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center h1 mb-2 text-black text-2xl pembungkus">
+                  3. Coffe
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Minuman/Coffe.png"
+               />
+               <h1 class="text-center h1 text-green-500 pesan">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 pembungkus text-red-700 text-2xl">
+                  Harga : 5.000
+               </p>
+            </div>
+         </div>
+
+         <!-- Konten Minuman 4 -->
+         <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center h1 mb-2 text-black text-2xl pembungkus">
+                  4. Moctail Blue
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Minuman/Moctail Blue.png"
+               />
+               <h1 class="text-center h1 text-green-500 pesan">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 pembungkus text-red-700 text-2xl">
+                  Harga : 8.000
+               </p>
+            </div>
+         </div>
+
+         <!-- Konten Minuman 5 -->
+         <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center h1 mb-2 text-black text-2xl pembungkus">
+                  5. Moctail Kiwi
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Minuman/Moctail Kiwi.png"
+               />
+               <h1 class="text-center h1 text-green-500 pesan">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 pembungkus text-red-700 text-2xl">
+                  Harga : 8.000
+               </p>
+            </div>
+         </div>
+
+         <!-- Konten Minuman 6 -->
+         <div class="flex w-full sm:w-1/2 md:w-1/3 lg:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center h1 mb-2 text-black text-2xl pembungkus">
+                  6. Moctail orange
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Minuman/Moctail orange.png"
+               />
+               <h1 class="text-center h1 text-green-500 pesan">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 pembungkus text-red-700 text-2xl">
+                  Harga : 8.000
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+   <path
+      fill="#f0abfc"
+      fill-opacity="1"
+      d="M0,128L48,144C96,160,192,192,288,197.3C384,203,480,181,576,149.3C672,117,768,75,864,85.3C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+   ></path>
+</svg>
+</h1>
+<!-- Akhir Minuman -->
+
+
+
+      <!-- Snack -->
+      <h1
+   class="text-center h1 bg-fuchsia-300"
+   data-aos="fade-down"
+   data-aos-duration="1000"
+   id="snack"
+>
+   Menu Snack
+
+   <div class="container mx-auto px-1 py-2 lg:px-32 lg:pt-12">
+      <div class="-m-1 flex flex-wrap md:-m-2">
+         <div class="flex w-full md:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+                  1.Kentang Goreng
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Snack/Kentang Goreng.png"
+               />
+               <h1 class="text-center pesan text-black">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 text-red-900 text-2xl">Harga : 6.000</p>
+            </div>
+         </div>
+         <div class="flex w-full md:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+                  2.Burger
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Snack/Burger.png"
+               />
+               <h1 class="text-center pesan text-black">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 text-red-900 text-2xl">Harga : 6.000</p>
+            </div>
+         </div>
+         <div class="flex w-full md:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center mb-2 text-black text-2xl pembungkus">
+                  3.Bakso Goreng
+               </h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Snack/Bakso Goreng.png"
+               />
+               <h1 class="text-center pesan text-black">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 text-red-900 text-2xl">Harga : 2.000</p>
+            </div>
+         </div>
+         <div class="flex w-full md:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center text-black text-2xl pembungkus">4.Nugget</h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Snack/Nugget.png"
+               />
+               <h1 class="text-center pesan text-black">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 text-red-900 text-2xl">Harga : 2.000</p>
+            </div>
+         </div>
+         <div class="flex w-full md:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center text-black text-2xl pembungkus">5.Sosis</h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Snack/Sosis.png"
+               />
+               <h1 class="text-center pesan text-black">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 text-red-900 text-2xl">Harga : 3.000</p>
+            </div>
+         </div>
+         <div class="flex w-full md:w-1/3 flex-wrap">
+            <div class="w-full p-1 md:p-2">
+               <h1 class="text-center text-black text-2xl">6.Roti Bakar</h1>
+               <img
+                  alt="gallery"
+                  class="image1 block w-full rounded-lg object-cover object-center"
+                  src="img_Snack/Roti Bakar.png"
+               />
+               <h1 class="text-center pesan text-black">
+                  <a href="proses.html">Pesan Menu Ini</a>
+               </h1>
+               <br />
+               <p class="text-center pb-5 text-red-900 text-2xl">Harga : 3.000</p>
+            </div>
+         </div>
+      </div>
+   </div>
+</h1>
+
+      <!-- Akhir Snack -->
+
+      <!-- Projects -->
+      <!-- Contact  -->
+      <h1 class="text-center contact1 bg-orange-400" data-aos="fade-down" id="contact">
+         Contact
+
+         <div
+            class="relative flex items-top justify-center min-h-screen bg-orange-400 dark:bg-gray-900 sm:items-center sm:pt-0"
+         >
+            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+               <div class="mt-8 overflow-hidden">
+                  <div class="grid grid-cols-1 md:grid-cols-2">
+                     <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+                        <h1
+                           class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight"
+                        >
+                           Hubungi Kami
+                        </h1>
+                        <p
+                           class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2"
+                        >
+                           Isi Form Tersebut Untuk Memulai Percakapan
+                        </p>
+
+                        <div
+                           class="flex items-center mt-8 text-gray-600 dark:text-gray-400"
+                        >
+                           <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8 text-gray-500"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="1.5"
+                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                              />
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="1.5"
+                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                              />
+                           </svg>
+                           <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                              Your Address Name
+                           </div>
+                        </div>
+
+                        <div
+                           class="flex items-center mt-4 text-gray-600 dark:text-gray-400"
+                        >
+                           <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8 text-gray-500"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="1.5"
+                                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                              />
+                           </svg>
+                           <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                              +62 Your Phone Number
+                           </div>
+                        </div>
+
+                        <div
+                           class="flex items-center mt-2 text-gray-600 dark:text-gray-400"
+                        >
+                           <svg
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="1.5"
+                              viewBox="0 0 24 24"
+                              class="w-8 h-8 text-gray-500"
+                           >
+                              <path
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 stroke-width="1.5"
+                                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                              />
+                           </svg>
+                           <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                              Your Email
+                           </div>
+                        </div>
+                     </div>
+
+                     <form class="p-6 flex flex-col justify-center">
+                        <div class="flex flex-col">
+                           <label for="name" class="hidden">Nama :</label>
+                           <input
+                              type="name"
+                              name="name"
+                              id="name"
+                              placeholder="Nama Lengkap"
+                              class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                           />
+                        </div>
+
+                        <div class="flex flex-col mt-2">
+                           <label for="email" class="hidden">Email</label>
+                           <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Email"
+                              class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                           />
+                        </div>
+
+                        <div class="flex flex-col mt-2">
+                           <label for="tel" class="hidden">No HP</label>
+                           <input
+                              type="tel"
+                              name="tel"
+                              id="tel"
+                              placeholder="No HP"
+                              class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                           />
+                        </div>
+
+                        <button
+                           type="submit"
+                           class="md:w-32 bg-indigo-600 hover:bg-blue-dark text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-indigo-500 transition ease-in-out duration-300"
+                        >
+                           Kirim
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+               fill="#1d4ed8"
+               fill-opacity="1"
+               d="M0,64L48,85.3C96,107,192,149,288,165.3C384,181,480,171,576,176C672,181,768,203,864,213.3C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+            ></path>
+         </svg>
+      </h1>
+      <!-- Akhir Contact  -->
+
+      <!-- Footer -->
+      <footer class="bg-blue-700">
+         <h1 class="footer text-white">&copy;Your Name 2023</h1>
+      </footer>
+
+      <!-- Akhir Footer -->
+      <!-- Script -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init();
+      </script>
+      <script>
+         const toggleButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+         const menu = document.getElementById('navbar-menu');
+      
+         toggleButton.addEventListener('click', () => {
+            menu.classList.toggle('hidden'); // Toggle the 'hidden' class
+         });
+      </script>
+      <!-- Akhir Script -->
+   </body>
+</html>
